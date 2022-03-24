@@ -1,0 +1,22 @@
+<div class="row mb-3">
+    <div class="col"><h3>{{ heading }}</h3></div>
+</div>
+<table class="table table-bordered">
+    <tr class="bg-secondary text-white">
+        <th>No.</th>
+        <th>Name</th>
+        <th>Email Address</th>
+        <th>Phone</th>
+        <th>Action</th>
+    </tr>
+    <tr ng-repeat="item in data">
+        <td>{{ item.id }}</td>
+        <td>{{ item.fullName }}</td>
+        <td>{{ item.emailAddress }}</td>
+        <td>{{ item.phoneNumber }}</td>
+        <td>
+            <a href="#!edit/{{ item.id }}">Edit</a>
+            <a href="#" ng-click="delete($event, item.id);">Delete</a>
+        </td>
+    </tr>
+</table>

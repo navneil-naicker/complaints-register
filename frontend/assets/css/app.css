@@ -1,0 +1,8 @@
+textarea{
+    resize: none;
+}
+
+h3{
+    border-bottom: 1px solid #ced4da;
+    padding-bottom: 12px;
+}

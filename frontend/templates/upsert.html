@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="row mb-3">
+        <div class="col"><h3>{{ heading }}</h3></div>
+    </div>
+    <div class="col">
+        <form ng-submit="submit()">
+            <div class="row mb-3">
+                <label for="FullName" class="form-label col-sm-2">Full Name</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" ng-value="data.fullName" ng-model="FullName" placeholder="Enter full name">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="EmailAddress" class="form-label col-sm-2">Email Address</label>
+                <div class="col-sm-5">
+                    <input type="email" class="form-control" ng-value="data.emailAddress" ng-model="EmailAddress" placeholder="Enter email address">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="PhoneNumber" class="form-label col-sm-2">Phone Number</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" ng-value="data.phoneNumber" ng-model="PhoneNumber" placeholder="Enter phone number">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="ResidentialAddress" class="form-label col-sm-2">Residential Address</label>
+                <div class="col-sm-5">
+                    <textarea class="form-control" ng-value="data.residentialAddress" ng-model="ResidentialAddress" rows="2"></textarea>
+                </div>                
+            </div>
+            <div class="row mb-3">
+                <label for="Description" class="form-label col-sm-2">Description</label>
+                <div class="col-sm-5">
+                    <textarea class="form-control" ng-value="data.description" ng-model="Description" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="Status" class="form-label col-sm-2">Status</label>
+                <div class="col-sm-5">
+                    <select class="form-control" ng-value="data.status" ng-model="Status" >
+                        <option value="1">Created</option>
+                        <option value="2">In Progress</option>
+                        <option value="3">Closed</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="offset-sm-2 col-sm-5">
+                    <button type="submit" class="col-sm-12 btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
